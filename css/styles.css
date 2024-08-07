@@ -293,3 +293,173 @@ footer a {
     padding: 5px 0;
     color: #f1f1f1;
 }
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .mockup {
+        width: 350px;
+        height: auto;
+    }
+    
+    .title {
+        font-size: 50px;
+    }
+
+    .sub-texto {
+        font-size: 22px;
+    }
+
+    .container-cards {
+        justify-content: space-evenly;
+    }
+
+    .servicios .card {
+        width: 45%;
+    }
+
+    .container-bg {
+        justify-content: space-evenly;
+    }
+
+    .productos .card {
+        width: 30%;
+    }
+
+    .card {
+        width: 42%;
+    }
+
+    .main-footer {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main .container {
+        padding: 60px;
+    }
+
+    .nav_container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .navegador {
+        height: auto;
+    }
+
+    .logo {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .links {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .link {
+        padding: 7px 10px;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .principal_textos {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mockup {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .sub-texto {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sub-title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .sub-texto-servicios {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card {
+        margin-bottom: 40px;
+        width: 65%;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .descripcion {
+        font-size: 15px;
+    }
+
+    .texto {
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .servicios .card {
+        width: 80%;
+    }
+
+    .productos .card {
+        width: 30%;
+    }
+
+    .container-bg {
+        justify-content: space-evenly;
+    }
+
+    .main-footer {
+        padding: 20px;
+    }
+
+    .main-footer h2 {
+        font-size: 20px;
+    }
+
+    .main-footer p {
+        font-size: 15px;
+    }
+
+    .main-footer h1 {
+        font-size: 15px;
+    }
+
+    .main-footer li a {
+        font-size: 12px;
+    }
+
+    .main-footer i {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+
+
