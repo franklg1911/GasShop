@@ -1,10 +1,6 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;700&display=swap');
 
-body {
-    font-family: "Poppins", sans-serif;
-}
-
 :root {
     --color1: #02abcc;
     --color2: #00c1ca;
@@ -21,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -69,9 +66,12 @@ body {
 }
 
 .login {
+    /* Posiciona el elemento de forma relativa a su posición original, esto es útil para posicionar elementos hijos de forma absoluta */
     position: relative;
+    /* Hace que el elemento se comporte como un bloque en línea, lo que significa que puede tener dimensiones de "width y height" */
     display: inline-block;
     margin: 15px;
+    /* Añade un relleno interno de 8px arriba y abajo, 15 a lado derecho y izquierdo dentro del elemento */
     padding: 8px 15px;
     text-align: center;
     font-weight: 700;
@@ -79,18 +79,23 @@ body {
     color: var(--white);
     background: transparent;
     cursor: pointer;
+    /* Aplica una transición suave para todas las propiedades que cambian, con una duración de 0.5 segundosy un efecto de aceleración y desaceleración */
     transition: ease-in-out 0.5s;
     border: 2px solid #f9f871;
     border-radius: 10px;
+    /* Inset indica que la sombra se debe aplicar dentro del borde del elemento, 0 desplazamiento horizontal, 0 desplazamiento vertical, 0 difuminado, 0 expansión indica que la sombra no se expande */
     box-shadow: inset 0 0 0 0 #f9f871;
 }
 
 .login:hover {
     color: black;
+    /* 0 No hay desplazamiento horizontal, -100px la sombra se desplaza verticalmente hacia arriba 100px, esto significa que la sombra comenzará desde la parte superior y se extenderá hacia abajo cubriendo la parte del botón, 0 la sombra no tiene difuminado, 0 la sombra no se expande más alla de su tamaño original*/
     box-shadow: inset 0 -100px 0 0 #f9f871;
 }
 
+/*Se aplica cuando el usuario esta haciendo click sobre el elemento  */
 .login:active {
+    /* Esta propiedad se utiliza para aplicar transformaciones 2d o 3d a un elemento como moverlo, rotarlo, etc; sclar(0.9) cambia del tamaño del elemento , el valor 0.9 significa que el elemento se reduce al 90% de su tamaño original en ambas direcciones (horizontal - vertical) , esto da el efecto que de el botón se "encoge" cuando se hace click en él */
     transform: scale(0.9);
 }
 
