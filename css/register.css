@@ -1,0 +1,204 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --color1: #02abcc;
+    --color2: #00c1ca;
+    --color3: #1fd5ba;
+    --color4: #70e5a0;
+    --color5: #f9f871;
+    --black: #000;
+    --white: #fff;
+    --gray1: #808080;
+    --gray2: #4B4B4B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* Define cómo se calculan las dimensiones de un elemento es decir si el "width" o "height" incluyen el "padding" y "border" o si solo se aplican al contenido */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10px;
+    display: flex;
+    background-color: var(--color1);
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form {
+    /* Establece el ancho del elemento */
+    width: 100%;
+    /* Esta propiedad establece el ancho máximo que el elemento puede alcanzar, si el contenedor padre es más ancho que este valor , el elemento no se expandirá más allá de los 435px */
+    max-width: 650px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 41px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login_form h3 {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.login_form .login_option {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_form .login_option .option {
+    width: calc(100% / 2 - 12px);
+}
+
+.login_form .login_option .option a {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    gap: 12px;
+    background: #F8F8F8;
+    border: 1px solid #DADAF2;
+    margin: 34px 0 24px 0;
+    text-decoration: none;
+    color: #171645;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.login_form .login_option .option a:hover {
+    background: #ededf5;
+    border-color: var(--color1);
+}
+
+.login_form .login_option .option a img {
+    max-width: 25px;
+}
+
+.login_form p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.login_form .separator {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.login_form .separator span {
+    background-color: #fff;
+    z-index: 1;
+    padding: 0 10px;
+    position: relative;
+}
+
+.login_form .separator::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background: #C2C2C2;
+    /* Hace que un elemento se comporte como un bloque, ocupando todo el ancho disponible dentro de su contenedor padre y forzando un salto de línea antes y después del mismo */
+    display: block;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .input_box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+form .input_box input {
+    width: 100%;
+    height: 57px;
+    flex: 1;
+    margin-right: 2.5rem;
+    border: 1px solid #DADAF2;
+    border-radius: 6px;
+    outline: none;
+    background: #F8F8F8;
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+}
+
+form .input_box input:focus {
+    border-color: var(--color1)
+}
+
+form .input_box .password_title {
+    /* Convierte el contenedor en flexible  */
+    display: flex;
+    /* Define como se distribuye el espacio o largo del eje principal del contenedor flex, space-between coloca los elementos hijos lo mas separados posibles distribuyendo los elementos de manera uniforme */
+    justify-content: space-between;
+    text-align: center;
+}
+
+form .input_box {
+    position: relative;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    width: 100%;
+    height: 56px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: var(--color1);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #00979e;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .input_box {
+        margin-right: 0;
+    }
+}
